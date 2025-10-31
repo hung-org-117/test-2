@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+    {
+      "path": "ui/web",
+    },
+    {
+      "path": "tests/ocpp-server",
+    },
+  ],
+}
