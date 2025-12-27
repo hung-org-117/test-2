@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.repository == 'sap/e-mobility-charging-stations-simulator'
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - name: gh login
       run: echo "${{ secrets.SECRET_TOKEN }}" | gh auth login --with-token
     - name: parse latest clone count

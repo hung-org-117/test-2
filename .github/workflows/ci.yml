@@ -29,7 +29,7 @@ jobs:
       run:
         working-directory: tests/ocpp-server
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - name: Install Poetry
       run: pipx install poetry
     - name: Setup Python ${{ matrix.python }}
@@ -57,7 +57,7 @@ jobs:
     name: Build simulator with Node ${{ matrix.node }} on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
     - name: Dependency Review
@@ -116,7 +116,7 @@ jobs:
       run:
         working-directory: ui/web
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
       with:
         fetch-depth: 0
     - name: Dependency Review
@@ -163,7 +163,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build simulator docker image
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - name: Setup Docker Buildx
       id: buildx
       uses: docker/setup-buildx-action@v3
@@ -180,7 +180,7 @@ jobs:
         working-directory: ui/web
     name: Build dashboard docker image
     steps:
-    - uses: actions/checkout@v5
+    - uses: actions/checkout@v6
     - name: Setup Docker Buildx
       id: buildx
       uses: docker/setup-buildx-action@v3
